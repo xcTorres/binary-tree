@@ -4,15 +4,15 @@
 #include"bst.h"
 using namespace std;
 int main() {
-	bst<const char*, const char*>* tree = new bst<const char*, const char*>();
-	tree->insert("a", "2.0");
-	tree->insert("b", "1.0");
-	tree->insert("c", "2.0");
-	tree->insert("d", "2.0");
-	tree->insert("e", "10.0");
-	tree->insert("f", "10.0");
-	tree->insert("g", "10.0");
-
+	bst<char, const char*>* tree = new bst< char, const char*>();
+	tree->insert('c', "2.0");
+	tree->insert('d', "1.0");
+	tree->insert('b', "2.0");
+	tree->insert('a', "2.0");
+	tree->insert('f', "10.0");
+	tree->insert('e', "10.0");
+	tree->insert('g', "10.0");
+	tree->remove('f');
 	//preorder
 	cout << "preOrder:" << endl;
 	tree->print(PRE_ORDER);

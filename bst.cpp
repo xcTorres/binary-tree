@@ -6,13 +6,14 @@ using namespace std;
 int main() {
 	bst<char, const char*>* tree = new bst< char, const char*>();
 	tree->insert('c', "2.0");
-	tree->insert('d', "1.0");
-	tree->insert('b', "2.0");
+	tree->insert('b', "1.0");
 	tree->insert('a', "2.0");
-	tree->insert('f', "10.0");
+	tree->insert('f', "2.0");
 	tree->insert('e', "10.0");
+	tree->insert('h', "10.0");
 	tree->insert('g', "10.0");
-	tree->remove('f');
+	tree->insert('i', "10.0");
+	tree->remove('i');
 	//preorder
 	cout << "preOrder:" << endl;
 	tree->print(PRE_ORDER);
